@@ -1,1 +1,4 @@
-"# 2019-1-DIP-1C24" 
+# Curso de Diseño de Intefases de Programación
+
+## Ciclo : 2019-1
+## Carrera : C24
