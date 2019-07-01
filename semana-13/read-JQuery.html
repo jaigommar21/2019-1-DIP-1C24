@@ -39,19 +39,23 @@
     <!-- carga la libreria de JQuery -->
     <!-- script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script -->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     <script>
        
-        // Permite cambiar de contenido todas las
+        // Permite excribir el contenido en todas las
         // etiquetas <p>
         $("p").text("TECSUP");
        
-
-        //$("#main-heading").text("jQuery? More like YAY-QUERY!");
+        // Leer el texto de una elemento con un ID definido
         var headingText = $("#main-heading").text();
         console.log(headingText);
-        $("#main-heading").text("!!" + headingText + "!!");    
-        $(".note").text("NOTE: jQuery has been known to cause EXTREME JOY!");
-        // jgm
+        alert(headingText)
+
+        // Escribir en un elemento especifico con un ID
+        $("#main-heading").text("!!" + headingText + "!!");   
+        // Modifica elemento que esten usando la class note  
+        $(".note").text("Diseño de Interfaces");
+        
     </script>
     </body>
 </html>
