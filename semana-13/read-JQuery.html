@@ -36,10 +36,16 @@
     
     <p class="note">Note: jQuery functions use the DOM API (like <code>document.getElementById</code>). You should  learn that first, if you haven't yet.</p>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-     
+    <!-- carga la libreria de JQuery -->
+    <!-- script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
-        $("p").text("jQuery is the GREATEST!!!");
+       
+        // Permite cambiar de contenido todas las
+        // etiquetas <p>
+        $("p").text("TECSUP");
+       
+
         //$("#main-heading").text("jQuery? More like YAY-QUERY!");
         var headingText = $("#main-heading").text();
         console.log(headingText);
