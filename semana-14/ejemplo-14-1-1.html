@@ -2,13 +2,9 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Creating elements with jQuery</title>
+        <title>jQuery Collections vs. DOM Nodes</title>
         <style>
             .crocodile {
-                color: green;
-                font-family: fantasy;
-            }
-            .tecsup {
                 color: green;
                 font-family: fantasy;
             }
@@ -31,31 +27,35 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/2006-07-07_katze_mit_angel.jpg" width="50">
         
         <a href="https://en.wikipedia.org/wiki/Cat">Learn more</a>
-        here 
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script>
-        
-        $("h2").text("JQuery in Action");
-        
-        $("p").html("laboratory 13-14");
-        
+        // Modifying elements
+        $("h2").text("CROCODILE ATTACK!");
+        $("p").html("The crocodiles are coming - <strong>oh noess</strong>!!");
         $("p").css("color", "green");
+        $("h2").addClass("crocodile");
+        $("a").attr("href", "https://en.wikipedia.org/wiki/Crocodile");
+        $("img").attr("src", "https://www.kasandbox.org/programming-images/animals/crocodiles.png");
         
-        $("h2").addClass("tecsup");
-       
-        $("a").attr("href", "https://www.tecsup.edu.pe");
-        
-       $("img").attr("src", "https://cdn-images-1.medium.com/max/1600/1*QR2SBNwG75LyY5uwqWpN3A.png");
-        
-        //*
+        // Creating elements
         var newP = $("<p>");
-        newP.text("Add element in real time");
-        newP.addClass("tecsup");
-        // append prepend after
-        //$("body").append(newP);
-        //*/
-
+        newP.text("The crocodiles have eaten this ENTIRE PAGE!");
+        newP.addClass("crocodile");
+        $("body").append(newP);
+        
+        // Let's discuss:
+        var headingFromD = document.getElementById("cuteness"); // DOM node
+        headingFromD.innerHTML = "Setting .innerHTML";
+        var headingFromJ = $("#cuteness"); // jQuery collection
+        headingFromJ.html("Using .html()");
+        
+        var $heading = $("#cuteness");
+        $heading.html("Using jQuery again!");
+        var headingD = $heading[0];
+        
+        var $headingJ = $(headingD);
+        
         </script>
     </body>
 </html>
