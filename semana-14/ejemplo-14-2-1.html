@@ -13,6 +13,8 @@
     <body>
         <button id="croc-button">Crocodilize</button>
         
+        <button id="clickme">TECSUP</button>
+
         <h2 id="cuteness">Cats are cute!</h2>
 
         <p>Cats are widely known to be one of the cutest animals. It has long been rumored that they have put all of humanity under a hypnosis, so that they can achieve their goals of getting fed while also getting to do whatever they darn want around our houses.</p>
@@ -43,10 +45,14 @@
         };
         
         $("#croc-button").on("click", function() {
-            console.log("you clicked me!!");
-            crocodilize();
-        });
-        
+                   console.log("you clicked me!!");
+                   crocodilize();
+              });
+    
+        $("#clickme").on("click", function() {
+                   alert("TECSUP");
+                   
+              });    
         </script>
     </body>
 </html>
