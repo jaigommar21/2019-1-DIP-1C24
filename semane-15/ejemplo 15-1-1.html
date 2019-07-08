@@ -6,16 +6,16 @@
     </head>
     <body>
 
-    <h1>Reptile quiz</h1>
+    <h1>Languaje quiz</h1>
     
     <form id="quiz-form">
         <label>
             What is this? <br>
-            <img src="https://ka-perseus-images.s3.amazonaws.com/325aab611b8b69b51bfeb16ade0af741da7dc3ff.jpg" alt="Reptile"> <br>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png" alt="Reptile" width="200px" > <br>
             <select id="quiz-answer">
-                <option value="crocodile">Crocodile</option>
-                <option value="alligator">Alligator</option>
-                <option value="caiman">Caiman</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+                <option value="javascript">javascript</option>
             </select>
         </label> <br>
         <button type="submit">Check Answer</button>
@@ -35,7 +35,7 @@
         var $answer = $("#quiz-answer"); 
         var answer = $answer.val();
         console.log(answer);
-        if (answer === "crocodile") {
+        if (answer === "python") {
             $("#result").text("Woweeee! You got it! WOOO PARTY!");
         } else {
             $("#result").text("Try again!");

@@ -11,6 +11,9 @@
         </style>
     </head>
     <body>
+
+        <button id="creator">TECSUP</button>
+
         <h2 id="cuteness">Cats are cute!</h2>
 
         <p>Cats are widely known to be one of the cutest animals. It has long been rumored that they have put all of humanity under a hypnosis, so that they can achieve their goals of getting fed while also getting to do whatever they darn want around our houses.</p>
@@ -54,6 +57,20 @@
                 .css("left", event.pageX + "px")
                 .appendTo("body");
         });
+
+        $("creator").on("click", function(event) {
+            console.log(event);
+
+            
+            var $img = $("<img>")
+                .attr("src", "https://www.kasandbox.org/programming-images/animals/crocodiles.png")
+                .width(100)
+                .css("position", "absolute")
+                .css("top", "100px")
+                .css("left", "100px")
+                .appendTo("body");
+        });
+
         </script>
     </body>
 </html>
